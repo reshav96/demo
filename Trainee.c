@@ -2,7 +2,7 @@
 
 struct Trainee 
 { 
-    	int empid;
+      int empid;
       char name[20];
       int age;
       double scores[5];
@@ -54,27 +54,15 @@ int main()
         avg=avg+t[i].scores[y];
       }
       avg=avg/2;
-    
-	printf("Average score of %d module is %lf\n",y,avg);
-    
-	for(i=0;i<2;i++)
-    
-	{
-        
-		for(j=0;j<5;j++)
-        
-		{
-            
-			avt=avt+t[i].scores[j];
-        
-		}
-    
+      printf("Average score of %d module is %lf\n",y,avg);
+      for(i=0;i<2;i++)
+      {  
+      	for(j=0;j<5;j++)
+	{    
+	  avt=avt+t[i].scores[j];
 	}
-    
-	avt=avt/2;
-    
-	printf("Average total of all Employee is %lf",avt);
-    
-	return 0;
-
+      }
+      avt=avt/2;
+      printf("Average total of all Employee is %lf",avt);
+      return 0;
 }
